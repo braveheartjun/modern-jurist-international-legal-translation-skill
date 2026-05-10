@@ -1,6 +1,6 @@
 ## 🧠  Skill
 
-📦 **[Download legal-translation.skill](./legal-translation.skill)**
+📦 **[Download legal-translation.skill](./skills/legal-translation.skill)**
 
 
 Translates legal documents across 30+ languages with full legal context - not just words.
