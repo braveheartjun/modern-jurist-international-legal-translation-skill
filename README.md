@@ -1,8 +1,7 @@
-## 🧠 Claude Skill
+## 🧠  Skill
 
 📦 **[Download legal-translation.skill](./legal-translation.skill)**
 
-Install in Claude: **Settings → Skills → Install from file**
 
 Translates legal documents across 30+ languages with full legal context — not just words.
 Supports contracts, affidavits, court orders, PoA, wills, leases, MoUs and more.
