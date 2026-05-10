@@ -1,0 +1,46 @@
+MUTUAL AGREEMENT AND CONSIDERATION CLAUSES
+
+The following clauses are extracted from a commercial agreement governed by English law,
+for translation into French for use in a French law governed version of the same agreement.
+
+---
+
+CLAUSE 4 — CONSIDERATION
+
+This Agreement is supported by good and valuable consideration, the receipt and sufficiency
+of which are hereby acknowledged by both parties. In further consideration of the mutual
+covenants and promises contained in this Agreement, each party agrees to be bound by the
+terms hereof.
+
+---
+
+CLAUSE 5 — ENTIRE AGREEMENT
+
+This Agreement constitutes the entire agreement between the parties with respect to its
+subject matter and supersedes all prior negotiations, representations, warranties,
+understandings, and agreements, whether oral or written, between the parties relating
+to the subject matter hereof.
+
+---
+
+CLAUSE 6 — AMENDMENT
+
+No amendment, modification, or supplement to this Agreement shall be valid unless made
+in writing and duly executed by authorized representatives of both parties.
+
+---
+
+CLAUSE 7 — SEVERABILITY
+
+If any provision of this Agreement is found by a court of competent jurisdiction to be
+invalid, illegal, or unenforceable, the remaining provisions shall continue in full force
+and effect. The parties shall negotiate in good faith to replace any invalid provision
+with a valid provision that achieves, to the greatest extent possible, the same economic
+and legal effect.
+
+---
+
+TRANSLATOR'S NOTE FOR CONTEXT:
+These clauses are from an agreement originally drafted under English common law.
+The French version will be governed by French law (Code Civil).
+Please flag any concepts that require adaptation for French civil law.

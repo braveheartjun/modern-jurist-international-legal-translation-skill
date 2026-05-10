@@ -1,0 +1,30 @@
+PARTY NAMES FOR TRANSLITERATION
+
+The following names appear in a contract being adapted into Hindi (Devanagari script).
+All names must be transliterated into Devanagari — not translated.
+
+PARTY 1 (Individual — English name):
+John Michael Thompson
+Address: 14 Baker Street, London W1U 7BW, United Kingdom
+
+PARTY 2 (Individual — Arabic name):
+Fatima bint Ali Al-Hassan
+Address: Villa 22, Al Wasl Road, Dubai, United Arab Emirates
+
+PARTY 3 (Individual — Chinese name):
+Zhang Wei (张伟)
+Address: Room 801, Jing'an District, Shanghai 200040, China
+
+PARTY 4 (Company — German name):
+Müller & Hoffmann Rechtsanwälte GbR
+Address: Kurfürstendamm 45, 10707 Berlin, Germany
+
+PARTY 5 (Individual — Russian name):
+Alexei Nikolaevich Volkov
+Address: Tverskaya Street 12, Moscow 125009, Russia
+
+Instructions:
+1. Provide Devanagari transliteration for each name
+2. For company names, transliterate only — do not translate the legal entity type
+3. Note any sounds that do not exist in Hindi and explain your approximation
+4. Use the simplified phonetic convention (not strict IAST) suitable for a legal contract
