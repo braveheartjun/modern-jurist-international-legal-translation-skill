@@ -1,6 +1,6 @@
 ## 🧠 Claude Skill
 
-📦 **[Download legal-translation.skill](./skill/legal-translation.skill)**
+📦 **[Download legal-translation.skill](./legal-translation.skill)**
 
 Install in Claude: **Settings → Skills → Install from file**
 
