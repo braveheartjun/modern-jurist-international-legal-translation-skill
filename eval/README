@@ -1,1 +1,59 @@
-JHDHDHD
+# Evals — Legal Translation Skill
+
+Test cases for the `legal-translation` skill, built as the international extension of [Modern Jurist](https://github.com/braveheartjun/Modern-Jurist) — a legal translation app originally developed for the Indian legal ecosystem.
+
+These evals can be used to verify the skill works correctly after installation, or to benchmark improvements over time.
+
+---
+
+## What's inside
+
+| File | Description |
+|------|-------------|
+| `evals.json` | All 8 test cases with prompts, expected outputs, and verifiable assertions |
+| `files/` | Sample legal documents used as input for each eval |
+
+---
+
+## The 8 test cases
+
+| # | Test | Languages | What it tests |
+|---|------|-----------|---------------|
+| 1 | NDA | English → Hindi | Full document translation, Hindi legal vocabulary, structure preservation |
+| 2 | Lease Agreement | Arabic → English | RTL source, Arabic name transliteration, English lease conventions |
+| 3 | Party Names | Any → Devanagari | Transliteration of English, Arabic, Chinese, German, Russian names |
+| 4 | Software License | English → French | French IP terms, civil law conventions, guillemets, operative words |
+| 5 | Affidavit | English → Marathi | Marathi (not Hindi) legal vocabulary, verification clause |
+| 6 | Power of Attorney | English → Hindi/Arabic/Japanese/German | Legal term equivalents across 4 languages and scripts |
+| 7 | Consideration Clauses | English → French | Detecting and handling common law vs civil law jurisdictional gaps |
+| 8 | Employment Contract | English + Hindi | Bilingual side-by-side clause output |
+
+---
+
+## How to run these evals manually
+
+1. Install `legal-translation.skill` in Claude → **Settings → Skills → Install from file**
+2. For each eval in `evals.json`, paste the `prompt` into Claude
+3. For evals with `files`, also upload the listed file
+4. Check the output against the `expectations` list — each item should be true
+
+---
+
+## What a passing translation looks like
+
+- Identifies the document type before translating
+- Builds a glossary of defined terms and applies them consistently throughout
+- Uses native-language legal conventions — not word-for-word translation
+- Preserves all clause numbers, party names, dates, and amounts unchanged
+- Flags jurisdictional differences in Translator's Notes
+- Ends with a certification disclaimer
+
+---
+
+## About this skill
+
+This skill was created by **Arjun Singh Chouhan** as the international extension of Modern Jurist.
+
+Modern Jurist was originally built for the Indian legal ecosystem — translating legal documents between English, Hindi, Marathi, Gujarati, and Kannada — with a focus on legal intent and drafting conventions, not literal translation. This skill takes that same philosophy and expands it to all language pairs and jurisdictions globally.
+
+MIT License © 2026 Arjun Singh Chouhan
