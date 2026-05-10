@@ -1,2 +1,10 @@
-# modern-jurist-international-legal-translation-skill
-A Claude skill for expert legal document translation across 30+ languages
+## 🧠 Claude Skill
+
+📦 **[Download legal-translation.skill](./skill/legal-translation.skill)**
+
+Install in Claude: **Settings → Skills → Install from file**
+
+Translates legal documents across 30+ languages with full legal context — not just words.
+Supports contracts, affidavits, court orders, PoA, wills, leases, MoUs and more.
+
+MIT License © 2026 Arjun Singh Chouhan
