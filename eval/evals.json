@@ -1,0 +1,147 @@
+{
+  "skill_name": "legal-translation",
+  "description": "Evaluations for the legal-translation skill. Tests cover: legal term accuracy, document structure preservation, transliteration, jurisdictional conventions, and multi-language pairs.",
+  "evals": [
+    {
+      "id": 1,
+      "name": "nda-english-to-hindi",
+      "prompt": "Translate the attached NDA into Hindi. Preserve all clause numbering, defined terms, and legal conventions.",
+      "files": ["evals/files/nda_english.txt"],
+      "expected_output": "A complete Hindi translation of the NDA that uses correct Hindi legal vocabulary, preserves all 5 numbered clauses with sub-clauses, uses traditional Hindi contract opening and closing formulas, keeps party names untranslated, preserves all dates and the Mumbai arbitration seat, and includes Translator's Notes.",
+      "expectations": [
+        "The translation uses 'अनुबंध' or 'करार' for Agreement, not a romanized or English word",
+        "The translation uses 'गोपनीय जानकारी' or equivalent Hindi for 'Confidential Information' as a defined term",
+        "Party names 'Rahul Sharma' and 'Priya Mehta' appear untranslated in the Hindi text",
+        "All 5 clause numbers and their sub-clauses (1.1, 1.2, 2.1, 2.2) are preserved",
+        "The closing formula uses a Hindi equivalent of 'IN WITNESS WHEREOF' such as 'उपरोक्त के साक्ष्य में'",
+        "The translation includes a Translator's Notes section at the end",
+        "The place name 'Mumbai' is preserved in the arbitration clause",
+        "The translation uses 'प्रकटकर्ता पक्ष' or similar for Disclosing Party",
+        "The intake analysis identifies this as a Non-Disclosure Agreement before translating"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "arabic-lease-to-english",
+      "prompt": "Translate the attached Arabic lease agreement into English. Make it read like a professionally drafted English lease — not a literal translation.",
+      "files": ["evals/files/lease_arabic.txt"],
+      "expected_output": "A complete English translation of the Arabic lease that uses standard English lease conventions, preserves the 4 numbered articles, converts the Arabic date format properly, keeps party names in Arabic transliteration, preserves the SAR 5,000 rental amount exactly, and includes Translator's Notes noting the RTL script of the original.",
+      "expectations": [
+        "The output uses 'Landlord' and 'Tenant' for المؤجر and المستأجرة",
+        "The rental amount 'SAR 5,000' or 'five thousand Saudi Riyals' appears correctly",
+        "Party names are transliterated from Arabic (e.g. Ahmad Al-Omari, Sara Al-Zahrani)",
+        "All 4 numbered articles are preserved in the English output",
+        "The 30-day termination notice period is correctly stated",
+        "The lease term (April 2025 to March 2026, 12 months) is correctly translated",
+        "The output uses proper English lease agreement language, not word-for-word Arabic sentence structure",
+        "A Translator's Notes section is included"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "transliteration-party-names",
+      "prompt": "Transliterate all the party names in the attached file into Devanagari script for a Hindi contract. Show the transliterations and explain your choices for each name.",
+      "files": ["evals/files/names_for_transliteration.txt"],
+      "expected_output": "Correct Devanagari transliterations of all 5 names/entities with explanations of phonetic choices, noting sounds that do not exist in Hindi and how they were approximated.",
+      "expectations": [
+        "All names are rendered in Devanagari script, not romanized Hindi",
+        "John Michael Thompson is transliterated phonetically into Devanagari (e.g. जॉन माइकल थॉम्पसन)",
+        "Fatima Al-Hassan is transliterated with appropriate handling of Arabic sounds (e.g. फातिमा अल-हसन)",
+        "Zhang Wei is transliterated with acknowledgment that Chinese sounds approximate in Hindi (e.g. झांग वेई)",
+        "Müller & Hoffmann is transliterated with handling of the German umlaut ü",
+        "Alexei Nikolaevich Volkov is transliterated from Russian phonetics (e.g. अलेक्सेई निकोलायेविच वोल्कोव)",
+        "The response explains which sounds have no exact Hindi equivalent and how they were approximated",
+        "Transliterations are marked clearly as transliterations, not translations"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "software-license-to-french",
+      "prompt": "Translate the attached Software License Agreement into French. The translated version will be governed by French law — flag any clauses that need civil law adaptation.",
+      "files": ["evals/files/software_license_english.txt"],
+      "expected_output": "A complete French translation using correct French IP/licensing terminology, French legal drafting conventions including guillemets, correct operative words (devra/pourra), and Translator's Notes flagging common law vs civil law differences including the consideration doctrine and warranty disclaimer.",
+      "expectations": [
+        "The translation uses 'concédant' or 'donneur de licence' for Licensor and 'licencié' for Licensee",
+        "The term 'logiciel' is used for Software throughout",
+        "The operative word 'shall' is rendered as 'devra' or equivalent obligation form",
+        "French guillemets (« ») are used for defined terms",
+        "Company names 'TechVentures Private Limited' and 'InnoSoft Solutions SAS' are not translated",
+        "The WARRANTY DISCLAIMER clause is flagged in Translator's Notes as requiring French law adaptation",
+        "All 7 numbered clauses are preserved in the French output",
+        "A Translator's Notes section flags the common law 'consideration' concept",
+        "Person names 'Rajiv Nair' and 'Sophie Dubois' remain untranslated"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "affidavit-english-to-marathi",
+      "prompt": "Translate the attached affidavit into Marathi. Use proper Marathi legal conventions — not Hindi.",
+      "files": ["evals/files/affidavit_english.txt"],
+      "expected_output": "A complete Marathi translation using proper Marathi affidavit conventions — NOT Hindi words substituted for Marathi. Should use 'प्रतिज्ञापत्र', correct Marathi solemn declaration formula, keep Survey No. and property details intact, and end with the correct Marathi verification formula.",
+      "expectations": [
+        "The document title uses 'प्रतिज्ञापत्र' (Marathi for affidavit), not the Hindi 'शपथपत्र'",
+        "The name 'Sunil Kumar Patil' appears untranslated",
+        "The property reference 'Survey No. 123/A' and Registration No. '4521/2018' are preserved exactly",
+        "The place names 'Wadgaon', 'Haveli', 'Pune' are preserved",
+        "The Marathi solemn declaration uses correct Marathi form, not Hindi",
+        "The verification clause follows Marathi court document conventions",
+        "The word 'भार' or 'गहाण' is used for 'encumbrances' in Marathi, not the Hindi equivalent",
+        "All 6 numbered paragraphs are preserved in the Marathi output",
+        "A Translator's Notes section flags that this is Marathi (not Hindi) and notes key term choices"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "power-of-attorney-multilingual-terms",
+      "prompt": "I need to use the attached Power of Attorney as a reference. Tell me the correct legal equivalent of 'Power of Attorney' and 'Attorney-in-Fact' in Hindi, Arabic, Japanese, and German — show each in native script, explain jurisdictional nuances, and show how the document opening would look in each language.",
+      "files": ["evals/files/power_of_attorney_english.txt"],
+      "expected_output": "Accurate legal equivalents in all four languages with correct native script, explanation of jurisdictional nuances, and sample document opening formulas for each language based on the attached PoA.",
+      "expectations": [
+        "Hindi: 'मुख्तारनामा' shown in Devanagari script",
+        "Arabic: 'وكالة' or 'توكيل' shown in Arabic script with RTL note",
+        "Japanese: '委任状' shown in Japanese script with explanation of 甲/乙 party convention",
+        "German: 'Vollmacht' with explanation of German civil law notarization requirements",
+        "Each language section includes a sample document opening in native script",
+        "The response notes notarization requirements differ by jurisdiction",
+        "The response notes that 'Attorney-in-Fact' translates differently from 'lawyer/attorney' in all four languages",
+        "All four responses use native script, not romanization only"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "detect-and-flag-jurisdictional-gap",
+      "prompt": "Translate the attached consideration clauses into French. The agreement will be governed by French law — flag any clauses that need adaptation for the French civil law system.",
+      "files": ["evals/files/consideration_clauses_english.txt"],
+      "expected_output": "French translations of all 4 clauses, with Translator's Notes clearly flagging that 'consideration' is a common law concept that does not exist in French civil law, and offering a French civil law adapted version using 'objet' and 'cause' or 'contrepartie'.",
+      "expectations": [
+        "The translation does NOT simply translate 'consideration' as 'considération' without flagging the issue",
+        "A Translator's Note explains that 'consideration' is a common law doctrine with no direct equivalent in French civil law",
+        "The translation offers a French civil law adapted version using 'objet', 'cause', or 'contrepartie'",
+        "All 4 clauses (4 through 7) are translated",
+        "The entire agreement clause uses 'accord intégral' or 'intégralité de l'accord' in French",
+        "The severability clause uses 'divisibilité' or 'clause de divisibilité' in French",
+        "The response demonstrates understanding that French law governs contracts differently from English common law",
+        "The jurisdictional gaps are flagged as requiring review by a French law qualified lawyer"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "bilingual-employment-contract",
+      "prompt": "Create a bilingual (English / Hindi) version of the termination and confidentiality clauses from the attached employment contract — show both languages side by side, clause by clause.",
+      "files": ["evals/files/employment_contract_english.txt"],
+      "expected_output": "A clean bilingual side-by-side presentation of clauses 5 (Confidentiality) and 8 (Termination) in English and Hindi, with correct Hindi legal translation of all operative words, consistent use of defined terms, and proper formatting.",
+      "expectations": [
+        "The output presents English and Hindi side by side (two-column or clearly labelled sections)",
+        "Clause 5 (Confidentiality) and Clause 8 (Termination) are both included",
+        "The Hindi uses 'समाप्ति' or 'नौकरी की समाप्ति' for termination",
+        "The Hindi uses 'गोपनीय जानकारी' for Confidential Information consistently",
+        "The 30-day notice period is correctly stated in Hindi",
+        "The 15-day probation notice period is correctly stated in Hindi",
+        "Company name 'Bharat Innovations Private Limited' appears untranslated",
+        "Employee name 'Kavita Sharma' appears untranslated",
+        "The salary amount ₹1,20,000 is preserved exactly",
+        "The bilingual format is clean and professionally laid out"
+      ]
+    }
+  ]
+}
