@@ -1,4 +1,4 @@
-# legal-translation
+# Modern-Jurist-international-legal-translation
 
 **Legal document translation that understands law — not just language.**
 
